@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: blue;
+}
+
+.css-grid{
+    color: white;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 120px;
+    gap: 10px;
+    margin-top: 15px;
+    grid-template-areas:
+    "Masonry Responsive overlap overlap"
+    "Masonry Fluid Explicity Negative"
+    "flexible Masonry2 Explicity Mansonry3"
+    "Dom-order Masonry2 Named Named"
+    
+
+}
+.box{
+    background-color: white;
+    font-size: 8px;
+    color: blue;
+    
+}
+
+
+
+.box1{
+    grid-area: Masonry;
+}
+.box2{
+    grid-area: Responsive;
+}
+.box3{
+    grid-area: overlap;
+}
+.box4{
+    grid-area: Fluid;
+}
+.box5{
+    grid-area: explicity;
+}
+.box6{
+    grid-area: negative;
+}
